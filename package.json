@@ -1,0 +1,19 @@
+{
+  "name": "@mr_fozan/recipe.js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fozan-Developer/recipe.js.git"
+  },
+  "author": "Mr_Fozan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Fozan-Developer/recipe.js/issues"
+  },
+  "homepage": "https://github.com/Fozan-Developer/recipe.js#readme"
+}
