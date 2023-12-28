@@ -21,9 +21,9 @@ class Recipe {
         return getRecipe(recipesId, this.recipes);
     }
 
-    craft(receptId, inventory) {
-        return craft(receptId, inventory);
+    craft(recipeId, inventory) {
+        return craftRecipe(recipeId, inventory, this.recipes);
     }
-}
+};
   
-module.exports = Recipe
+module.exports = Recipe;

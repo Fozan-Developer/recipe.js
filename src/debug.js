@@ -16,7 +16,7 @@ function validRecipe(recipes) {
         if(ingridients.length < 1) return errors("recept_dont_ingridients");
         for(i in ingridients) {
             const ingridient = ingridients[i];
-            if(ingridient.name == undefined || ingridient.count == undefined) return errors("ingridient_dont_name_or_count");    
+            if(ingridient.id == undefined || ingridient.name == undefined || ingridient.count == undefined) return errors("ingridient_dont_id_or_count");    
             if(ingridient.count < 1 || Number.isNaN(ingridient.count)) return errors("ingridient_dont_number"); 
         };
     };
