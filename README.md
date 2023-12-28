@@ -1,10 +1,10 @@
-<h1 align="center">📝 Json.db</h1>
+<h1 align="center">🧾 Recipe.js</h1>
 
 <div align="center">
 
 [![npm package](https://img.shields.io/npm/v/@mr_fozan/recipe.js?logo=npm&style=flat-square)](https://www.npmjs.org/package/@mr_fozan/json.db)
 
-**Json.DB is a powerful [Node.js](https://npmjs.com) module that allows you to work with recipes.**
+**Recipe.js is a powerful [Node.js](https://npmjs.com) module that allows you to work with recipes.**
 
 </div>
 
