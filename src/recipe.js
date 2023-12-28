@@ -1,4 +1,4 @@
-const errors = require('./errors.js');
+const errors = require('./messages/errors.js');
 const Debug = require('./debug.js');
 // methods modules
 const getRecipe = require('./methods/getRecipe.js');
@@ -9,7 +9,8 @@ class Recipe {
         this.recipes = recipes;
         this.debug = debug;
 
-        if(debug == true) Debug("start", this.recipes)
+        Debug("validRecipe", this.recipes);
+        if(debug == true) Debug("start", this.recipes);
     }
   
     list() {
