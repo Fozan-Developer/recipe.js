@@ -1,5 +1,4 @@
 module.exports = function({ recipeId, count, recipes }) {
-    console.log(recipeId, recipes);
     const recipe = recipes.find(x=> x.id == recipeId);
     if(!recipe) throw Error("Такого рецепта не существует");
 
