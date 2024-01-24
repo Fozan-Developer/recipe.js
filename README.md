@@ -39,14 +39,14 @@ const recipes = [
     }
 ];
 
-const recipe = new Recipe({ recipes, debug: true });
+const recipe = new Recipe(recipes);
 ```
 
 # 📋 Get a list of recipes
 
 ```js
 const Recipe = require('@mr_fozan/recipe.js');
-const recipe = new Recipe({ recipes, debug: true });
+const recipe = new Recipe(recipes);
 
 console.log(recipe.list());
 ```
@@ -55,10 +55,20 @@ console.log(recipe.list());
 
 ```js
 const Recipe = require('@mr_fozan/recipe.js');
-const recipe = new Recipe({ recipes, debug: true });
+const recipe = new Recipe(recipes);
 
 console.log(recipe.get("juice"));
 ```
+
+# 🍏 Get a ingridients recipe
+
+```js
+const Recipe = require('@mr_fozan/recipe.js');
+const Recipes = new Recipe(recipes);
+
+console.log(Recipes.getIngridients("juce", 5).ingridients);
+```
+
 # ⚒ Craft recipe
 
 ```js

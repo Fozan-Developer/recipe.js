@@ -3,27 +3,28 @@ const Debug = require('./debug.js');
 // methods modules
 const getRecipe = require('./methods/getRecipe.js');
 const craftRecipe = require('./methods/craftRecipe.js');
+const getIngridients = require('./methods/getIngridients.js');
 
 class Recipe {
-    constructor({ recipes, debug }) {
+    constructor(recipes) {
         this.recipes = recipes;
-        this.debug = debug;
-
-        Debug("validRecipe", this.recipes);
-        if(debug == true) Debug("start", this.recipes);
-    }
+    };
   
     list() {
         return this.recipes;
-    }
+    };
 
     get(recipesId) {
         return getRecipe(recipesId, this.recipes);
-    }
+    };
 
-    craft(recipeId, inventory) {
-        return craftRecipe(recipeId, inventory, this.recipes);
-    }
+    getIngridients(recipesId, count) {
+        return getIngridients({ recipesId, count, recipes: this.recipes });
+    };
+
+    craft({ recipeId, count, inventory }) {
+        return craftRecipe({ recipeId, count, inventory, recipes: this.recipes });
+    };
 };
   
 module.exports = Recipe;
