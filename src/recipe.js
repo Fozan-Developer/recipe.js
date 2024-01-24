@@ -14,12 +14,12 @@ class Recipe {
         return this.recipes;
     };
 
-    get(recipesId) {
-        return getRecipe(recipesId, this.recipes);
+    get(recipeId) {
+        return getRecipe(recipeId, this.recipes);
     };
 
-    getIngridients(recipesId, count) {
-        return getIngridients({ recipesId, count, recipes: this.recipes });
+    getIngridients(recipeId, count) {
+        return getIngridients({ recipeId, count, recipes: this.recipes });
     };
 
     craft({ recipeId, count, inventory }) {
